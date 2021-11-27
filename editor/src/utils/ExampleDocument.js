@@ -20,9 +20,15 @@ const ExampleDocument = [
     children: [{ text: "paragraph" }],
   },
   {
-    type: "images",
-    children: [{ text: "image" }],
-  },
+    type: "paragraph",
+    children: [
+      { text: "Hello World! This is my paragraph inside a sample document." },
+      { text: "Italic text.", italic: true },
+      { text: "Bold and underlined text.", bold: true, underline: true },
+      { text: "variableFoo", code: true },
+      { text: "Bold text.", bold: true, code: true },
+    ],
+  }
 ];
 
 export default ExampleDocument;
